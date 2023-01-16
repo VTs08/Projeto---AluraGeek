@@ -1,0 +1,25 @@
+@import url(./css/header.css);
+@import url(./css/banner.css);
+@import url(./css/main.css);
+@import url(./css/footer.css);
+
+:root {
+    --font-raleway: 'Raleway', sans-serif;
+    --cinza-claro: #F5F5F5;
+    --cinza-escuro: #A2A2A2;
+    --cinza-texto: #464646;
+    --azul: #2A7AE4;
+    --branco: #ffffff;
+    --azul-footer: #EAF2FD;
+    --sombra: #C8C8C8;
+}
+
+body {
+    font-family: var(--font-raleway);
+    font-size: 16px;
+}
+
+.conteudo__principal, .banner__destaques, .rodape__box {
+    width: 70%;
+    margin: 0 auto;
+}

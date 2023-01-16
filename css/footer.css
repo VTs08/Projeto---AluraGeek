@@ -1,0 +1,65 @@
+.rodape {
+    background-color: var(--azul-footer);
+    margin-top: 4em;
+}
+
+.rodape__box {
+    padding: 4em 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.links__items a {
+    text-decoration: none;
+    color: var(--cinza-texto);
+    font-weight: 500;
+}
+
+.links__items {
+    margin-bottom: 25px;
+}
+
+.rodape__faleConosco {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.rodape__faleConosco__legenda {
+    font-weight: 700;
+    color: var(--cinza-texto);
+}
+
+.rodape__faleConosco input {
+    margin: 1em 0;
+}
+
+.rodape__faleConosco input, textarea {
+    border: none;
+    box-shadow: 0px 1px  0  var(--sombra);
+    padding: 2em 1em;
+}
+
+.rodape__button {
+    width: 30%;
+    color: var(--branco);
+    background: var(--azul);
+    border: none;
+    padding: 1.5em 0;
+    margin-top: 1em;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.desenvolvedor {
+    margin: 2em 0;
+}
+
+.desenvolvedor h4 {
+    color: var(--cinza-texto);
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0.4em;
+}
