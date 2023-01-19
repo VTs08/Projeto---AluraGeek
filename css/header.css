@@ -54,4 +54,53 @@
     .cabecalho {
         width: 90%;
     }
+
+    .cabecalho__search__box {
+        margin-right: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho__search__box {
+        width: 265px; 
+        margin-right: 2em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .cabecalho__logo__aluraGeek__controle {
+        width: 35px;
+    }
+
+    .cabecalho__logo__aluraGeek__texto {
+        width: 110px;
+    }
+
+    .logoAlura {
+        margin-right: 1.5em;
+    }
+
+    .cabecalho__search {
+        display: none;
+    }
+
+    .cabecalho__search__box {
+        order: 1;
+        margin: 0;
+        width: max-content;
+    }
+
+    .cabecalho__search__button {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .cabecalho__search__button img {
+        width: 30px;
+    }
+    
+    .cabecalho__login {
+        margin-right: 2em;
+    }
+
 }

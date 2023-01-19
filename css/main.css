@@ -65,3 +65,18 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .vitrine__produtos {
+        display: grid;
+        justify-content: space-between;
+        row-gap: 1.5em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .vitrine__produtos__item {
+        width: 100%;
+        margin: 0;
+    }
+}

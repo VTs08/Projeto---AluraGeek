@@ -35,12 +35,31 @@
 
 @media screen and (max-width: 768px) {
     .banner__container {
-        background: url(../img/banner.png) no-repeat;
         height: 310px;
         background-size: 100% 100%;
     }
     
     .button {
         margin: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .banner__container {
+        height: 220px;
+    }
+
+    .banner__destaques__titulo {
+        font-size: 22px;
+    }
+
+    .banner__destaques__descricao {
+        font-size: 16px;
+    }
+
+    .banner__destaques__button {
+        padding: 1em;
+        font-size: 14px;
+        font-weight: 500;
     }
 }
