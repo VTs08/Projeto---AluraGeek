@@ -25,7 +25,15 @@
 
 .vitrine__produtos {
     display: flex;
-    justify-content: space-between;
+    column-gap: 15px;
+}
+
+.vitrine__produtos__item {
+    width: 50%;
+}
+
+.vitrine__produtos__item img {
+    width: 100%;
 }
 
 .vitrine__produtos__nome {
@@ -46,3 +54,14 @@
     color: var(--azul);
 }
 
+@media screen and (max-width: 1024px) {
+    .vitrine__produtos__item:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vitrine__produtos__item:nth-child(5) {
+        display: none;
+    }
+}

@@ -33,3 +33,14 @@
     margin-bottom: 3em;
 }
 
+@media screen and (max-width: 768px) {
+    .banner__container {
+        background: url(../img/banner.png) no-repeat;
+        height: 310px;
+        background-size: 100% 100%;
+    }
+    
+    .button {
+        margin: 0.6rem;
+    }
+}

@@ -45,7 +45,13 @@
     border: var(--azul) solid 1px;
     padding: 13px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     text-decoration: none;
     margin-left: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .cabecalho {
+        width: 90%;
+    }
 }
