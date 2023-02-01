@@ -1,0 +1,82 @@
+.vitrine {
+    margin-top: 5em
+}
+
+.vitrine__categoria {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.vitrine__categoria__nome{
+    color: var(--cinza-texto);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.vitrine__categoria__verTudo {
+    background: url(../img/setinha.svg) no-repeat right;
+    width: 95px;
+    text-decoration: none;
+    color: var(--azul);
+    font-weight: 700;
+}
+
+.vitrine__produtos {
+    display: flex;
+    column-gap: 15px;
+}
+
+.vitrine__produtos__item {
+    width: 50%;
+}
+
+.vitrine__produtos__item img {
+    width: 100%;
+}
+
+.vitrine__produtos__nome {
+    font-weight: 500;
+    color: var(--cinza-texto);
+    margin: .5em 0;
+}
+
+.vitrine__produtos__preco {
+    font-weight: 700;
+    color: var(--cinza-texto);
+    margin-bottom: .5em;
+}
+
+.vitrine__produtos__verProduto {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--azul);
+}
+
+@media screen and (max-width: 1024px) {
+    .vitrine__produtos__item:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vitrine__produtos__item:nth-child(5) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .vitrine__produtos {
+        display: grid;
+        justify-content: space-between;
+        row-gap: 1.5em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .vitrine__produtos__item {
+        width: 100%;
+        margin: 0;
+    }
+}

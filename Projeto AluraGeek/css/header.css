@@ -1,0 +1,106 @@
+.cabecalho {
+    width: 70%;
+    margin: 35px auto;
+    display: flex;
+    align-items: center;
+}
+
+.logoAlura {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 3em;
+}
+
+.cabecalho__search__box {
+    display: flex;
+    width: 420px;
+    height: 35px;
+}
+
+.cabecalho__search {
+    background-color: var(--cinza-claro);
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding-left: 1.5em;
+    width: 100%;
+}
+
+.cabecalho__search::placeholder {
+    color: var(--cinza-escuro);
+    font-size: 16px;
+}
+
+.cabecalho__search__button {
+   border: none;
+   background-color: var(--cinza-claro);
+   border-radius: 0 20px 20px 0;
+   padding-right: 1.5em; 
+}
+
+.cabecalho__login {
+    width: 120px;
+    text-align: center;
+    color: var(--azul);
+    border: var(--azul) solid 1px;
+    padding: 13px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .cabecalho {
+        width: 90%;
+    }
+
+    .cabecalho__search__box {
+        margin-right: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho__search__box {
+        width: 265px; 
+        margin-right: 2em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .cabecalho__logo__aluraGeek__controle {
+        width: 35px;
+    }
+
+    .cabecalho__logo__aluraGeek__texto {
+        width: 110px;
+    }
+
+    .logoAlura {
+        margin-right: 1.5em;
+    }
+
+    .cabecalho__search {
+        display: none;
+    }
+
+    .cabecalho__search__box {
+        order: 1;
+        margin: 0;
+        width: max-content;
+    }
+
+    .cabecalho__search__button {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .cabecalho__search__button img {
+        width: 30px;
+    }
+    
+    .cabecalho__login {
+        margin-right: 2em;
+    }
+
+}
