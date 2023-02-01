@@ -2,11 +2,14 @@
 @import url(./css/banner.css);
 @import url(./css/main.css);
 @import url(./css/footer.css);
+@import url(./css/login.css);
+@import url(./css/produtos.css);
 
 :root {
     --font-raleway: 'Raleway', sans-serif;
     --cinza-claro: #F5F5F5;
     --cinza-escuro: #A2A2A2;
+    --cinza-login: #E5E5E5;
     --cinza-texto: #464646;
     --azul: #2A7AE4;
     --branco: #ffffff;
@@ -19,7 +22,7 @@ body {
     font-size: 16px;
 }
 
-.conteudo__principal, .banner__destaques, .rodape__box {
+.conteudo__principal, .banner__destaques, .rodape__box, .produtos__box {
     width: 70%;
     margin: 0 auto;
 }

@@ -1,0 +1,85 @@
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+}
+
+.login {
+    background-color: var(--cinza-login);
+}
+
+.login__box {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: auto;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    row-gap: 1rem;
+}
+
+.login__texto {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cinza-texto);
+    padding-bottom: .5rem;
+}
+
+.button__login {
+    width: 100%;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+.login__box a {
+    text-decoration: none;
+    color: #cbd6e5;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.login__box a:hover {
+    color: #1468df;;
+}
+
+.login__usuario, .login__senha{
+    height: 35px;
+    padding: .5rem 0 1rem 1rem;
+    border: none;
+    box-shadow: 0px 1px  0  var(--sombra);
+    
+}
+
+.rodape__login {
+    background-color: var(--azul-footer);
+}
+
+.rodape__box__login {
+    padding: 2em 0;
+}
+
+.rodape__box__login input, textarea{
+    padding: 1em;
+}
+
+.desenvolver__login {
+    margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .login__box {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .login__box {
+        width: 70%;
+    }   
+}
