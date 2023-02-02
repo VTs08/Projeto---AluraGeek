@@ -28,7 +28,7 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-    .conteudo__principal, .banner__destaques, .rodape__box {
+    .conteudo__principal, .banner__destaques, .rodape__box, .produtos__box {
         width: 90%;
         margin: 0 auto;
     }

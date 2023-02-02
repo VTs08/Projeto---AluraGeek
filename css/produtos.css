@@ -28,8 +28,7 @@
 
 .produtos__lista {
     display: grid;
-    /* grid-template-columns: repeat(6, calc(16.66% - 1rem)); */
-    grid-template-columns:  repeat(auto-fit, minmax(5rem, 10rem));
+    grid-template-columns: repeat(6, calc(16.66% - 1rem));
     grid-template-rows: repeat(3, 1fr);
     column-gap: .5rem;
     row-gap: 3rem;
@@ -54,4 +53,55 @@
 .produtos__lista__item img {
     width: 100%;
     margin-bottom: 0.5rem;
+}
+
+.rodape__produtos {
+    margin-top: 0;
+}
+
+.produtos__lista__item {
+    position: relative;
+}
+
+.item__config img {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    padding: 10px;
+}
+
+.item__config__lixeira {
+    top: 0;
+    right: 35px;
+    margin: 0; 
+    position: absolute; 
+}
+
+.item__config__editar {
+    top: 0;
+    right: 0px;
+    margin: 0;
+    
+    position: absolute; 
+}
+
+
+@media screen and (max-width: 1024px) {
+    .produtos__lista {
+        grid-template-columns: repeat(5, calc(20% - 1rem));
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .produtos__lista {
+        grid-template-columns: repeat(4, calc(25% - 1rem));
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .produtos__lista {
+        grid-template-columns: repeat(2, calc(50% - 1rem));
+    }
 }
